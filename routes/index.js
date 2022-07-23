@@ -136,10 +136,15 @@ router.post(
 );
 
 // logout route
-router.get("/logout", function(req, res) {
-  req.logout();
-  res.redirect("/");
-});
+router.get("/logout", (req, res, next) => {
+  req.logout(function (err) {
+    if (err) {
+      return next(err);
+    }
+    req.flash("success", "Goodbye!");
+    res.redirect("/");
+  });
+}); 
 
 // user profile
 router.get("/users/:user_id", function(req, res) {
