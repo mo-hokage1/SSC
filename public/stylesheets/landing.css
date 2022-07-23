@@ -1,0 +1,16 @@
+body {
+  background:url('https://assets-global.website-files.com/5eff9c5e4dba181f8aa2d1e0/614dfaed9cdcb08628f3b1cc_5-star-rating.jpeg') ;
+  font-family: 'PT Sans', sans-serif;
+}
+
+#landing-header {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  padding-top: 38vh;
+}
+
+#landing-header h1 {
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+}
